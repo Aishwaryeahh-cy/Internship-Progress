@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Total Marks Using forEach</title>
+</head>
+<body>
+
+<script>
+
+const marks = [75, 82, 91, 68, 88];
+
+let total = 0;
+
+marks.forEach(function(mark) {
+    total = total + mark;
+});
+
+let average = total / marks.length;
+
+console.log("Total Marks:", total);
+console.log("Average:", average);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Returning Array</title>
+</head>
+<body>
+
+<script>
+
+let a = [3, 8, 11, 14, 20];
+
+function getEvenNumbers(arr) {
+
+    let even = [];
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] % 2 == 0) {
+            even.push(arr[i]);
+        }
+
+    }
+
+    return even;
+}
+
+console.log(getEvenNumbers(a));
+
+</script>
+
+</body>
+</html>

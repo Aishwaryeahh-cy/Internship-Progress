@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System Using Switch</title>
+</head>
+<body>
+<script>
+let role = "admin";
+switch (role) {
+    case "admin":
+        console.log("Full Access");
+        break;
+    case "manager":
+        console.log("Limited Access");
+        break;
+    case "employee":
+        console.log("Read Only Access");
+        break;
+    default:
+        console.log("Invalid Role");
+}
+</script>
+</body>
+</html>

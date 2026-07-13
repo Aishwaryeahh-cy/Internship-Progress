@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order System</title>
+</head>
+<body>
+
+<script>
+
+const orders = [
+{
+    orderId: 101,
+    customer: "John",
+    items: ["Laptop", "Mouse"]
+},
+{
+    orderId: 102,
+    customer: "Emma",
+    items: ["Phone", "Charger"]
+}
+];
+
+orders[0].items.push("Keyboard");
+
+document.write("<h2>John's Order</h2>");
+document.write(orders[0].items + "<br><br>");
+
+document.write("<h2>Customer who ordered Phone</h2>");
+
+for(let i = 0; i < orders.length; i++){
+
+    if(orders[i].items.includes("Phone")){
+        document.write(orders[i].customer + "<br>");
+    }
+
+}
+
+let allItems = [];
+
+for(let i = 0; i < orders.length; i++){
+
+    for(let j = 0; j < orders[i].items.length; j++){
+
+        allItems.push(orders[i].items[j]);
+
+    }
+
+}
+
+document.write("<h2>All Ordered Items</h2>");
+document.write(allItems + "<br><br>");
+
+
+let totalItems = 0;
+
+for(let i = 0; i < orders.length; i++){
+
+    totalItems = totalItems + orders[i].items.length;
+
+}
+
+document.write("<h2>Total Items Ordered</h2>");
+document.write(totalItems);
+
+</script>
+
+</body>
+</html>

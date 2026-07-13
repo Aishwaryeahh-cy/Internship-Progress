@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Array Methods</title>
+</head>
+<body>
+
+<script>
+
+// -------------------- myPush() --------------------
+function myPush(arr, value){
+    arr[arr.length] = value;
+    return arr;
+}
+
+// -------------------- myPop() --------------------
+function myPop(arr){
+    let last = arr[arr.length - 1];
+    arr.length = arr.length - 1;
+    return last;
+}
+
+// -------------------- myMap() --------------------
+function myMap(arr){
+    let result = [];
+
+    for(let i = 0; i < arr.length; i++){
+        result[i] = arr[i] * 2;
+    }
+
+    return result;
+}
+
+// -------------------- myForEach() --------------------
+function myForEach(arr){
+
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    }
+
+}
+
+// -------------------- myObjectKeys() --------------------
+function myObjectKeys(obj){
+
+    let keys = [];
+    let i = 0;
+
+    for(let key in obj){
+        keys[i] = key;
+        i++;
+    }
+
+    return keys;
+}
+
+// ================= Testing =================
+
+// myPush()
+let arr1 = [10, 20, 30];
+document.write("<h2>myPush()</h2>");
+document.write("Before: " + arr1 + "<br>");
+myPush(arr1, 40);
+document.write("After: " + arr1 + "<br><br>");
+
+
+// myPop()
+let arr2 = [5, 10, 15];
+document.write("<h2>myPop()</h2>");
+document.write("Before: " + arr2 + "<br>");
+let removed = myPop(arr2);
+document.write("Removed: " + removed + "<br>");
+document.write("After: " + arr2 + "<br><br>");
+
+
+// myMap()
+let arr3 = [2, 4, 6, 8];
+let doubled = myMap(arr3);
+
+document.write("<h2>myMap()</h2>");
+document.write("Original: " + arr3 + "<br>");
+document.write("Mapped: " + doubled + "<br><br>");
+
+
+// myForEach()
+document.write("<h2>myForEach()</h2>");
+document.write("Check Console for Output<br><br>");
+
+let arr4 = [100, 200, 300];
+myForEach(arr4);
+
+
+// myObjectKeys()
+let student = {
+    name: "Rahul",
+    age: 25,
+    city: "Bangalore"
+};
+
+let keys = myObjectKeys(student);
+
+document.write("<h2>myObjectKeys()</h2>");
+document.write(keys);
+
+</script>
+
+</body>
+</html>

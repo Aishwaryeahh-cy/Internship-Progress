@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Operations</title>
+</head>
+<body>
+
+<script>
+
+const numbers = [12, 5, 8, 19, 22, 7, 30];
+
+let largest = numbers[0];
+let sum = 0;
+let greaterThan10 = [];
+
+console.log("Even Numbers:");
+
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] % 2 == 0) {
+        console.log(numbers[i]);
+    }
+
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    }
+
+    sum = sum + numbers[i];
+    if (numbers[i] > 10) {
+        greaterThan10.push(numbers[i]);
+    }
+    if (numbers[i] == 22) {
+        console.log("22 Found. Loop Stopped.");
+        break;
+    }
+
+}
+console.log("Largest Number:", largest);
+console.log("Sum:", sum);
+console.log("Numbers Greater Than 10:", greaterThan10);
+
+</script>
+
+</body>
+</html>
