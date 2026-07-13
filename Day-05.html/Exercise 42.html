@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Profile Card</title>
+
+    <style>
+        .card{
+            width:300px;
+            margin:auto;
+            text-align:center;
+            border:2px solid black;
+            padding:20px;
+            border-radius:10px;
+            background-color:lightgray;
+        }
+
+        img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+        }
+
+        button{
+            margin-top:15px;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <img src="https://via.placeholder.com/150" alt="Profile">
+
+    <h2>Rahul</h2>
+
+    <h3>Student</h3>
+
+    <button>Update Profile</button>
+
+</div>
+
+<script>
+
+let card = document.querySelector(".card");
+let image = document.querySelector("img");
+let name = document.querySelector("h2");
+let profession = document.querySelector("h3");
+let button = document.querySelector("button");
+
+button.onclick = function(){
+
+    name.innerHTML = "Aish";
+
+    profession.innerHTML = "Cyber";
+
+    image.src = "https://via.placeholder.com/150/0000FF/FFFFFF?text=Profile";
+
+    card.style.backgroundColor = "lightblue";
+
+}
+
+</script>
+
+</body>
+</html>

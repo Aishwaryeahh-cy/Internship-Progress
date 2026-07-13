@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Performance Dashboard</title>
+
+<style>
+
+.card{
+    width:250px;
+    border:2px solid black;
+    padding:15px;
+    margin:10px;
+}
+
+button{
+    padding:10px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>Employee Performance Dashboard</h2>
+
+<div class="card">
+    <h3>John</h3>
+    <p class="score">90</p>
+    <p class="status">Status</p>
+</div>
+
+<div class="card">
+    <h3>Emma</h3>
+    <p class="score">75</p>
+    <p class="status">Status</p>
+</div>
+
+<div class="card">
+    <h3>David</h3>
+    <p class="score">45</p>
+    <p class="status">Status</p>
+</div>
+
+<button onclick="checkPerformance()">Check Performance</button>
+
+<script>
+
+function checkPerformance(){
+
+    let cards = document.querySelectorAll(".card");
+
+    for(let i = 0; i < cards.length; i++){
+
+        let score = Number(cards[i].querySelector(".score").innerHTML);
+
+        let status = cards[i].querySelector(".status");
+
+        if(score > 85){
+
+            status.innerHTML = "Excellent";
+            status.style.color = "green";
+
+        }
+
+        else if(score >= 60){
+
+            status.innerHTML = "Good";
+            status.style.color = "orange";
+
+        }
+
+        else{
+
+            status.innerHTML = "Needs Improvement";
+            status.style.color = "red";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
