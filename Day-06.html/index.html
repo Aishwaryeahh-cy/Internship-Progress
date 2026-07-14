@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Online Quiz</h1>
+
+        <p>Time Left: <span id="timer">60</span> sec</p>
+
+        <progress id="progress" value="0" max="100"></progress>
+        <p id="progressText">0%</p>
+
+        <h2 id="question"></h2>
+
+        <div id="options">
+
+            <div class="option">
+                <input type="radio" id="opt1" name="option">
+                <label for="opt1" id="label1"></label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="opt2" name="option">
+                <label for="opt2" id="label2"></label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="opt3" name="option">
+                <label for="opt3" id="label3"></label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="opt4" name="option">
+                <label for="opt4" id="label4"></label>
+            </div>
+
+        </div>
+
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
