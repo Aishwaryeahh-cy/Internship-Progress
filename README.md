@@ -1,5 +1,14 @@
-# Internship Progress 🚀
+# 💼 Internship Chronicles
 
-A collection of my daily internship work, coding exercises, and learning milestones. This repository reflects my continuous growth, practical implementation, and hands-on experience throughout the internship journey.
+Turning knowledge into code, one commit at a time. 🚀
 
-**Tech Stack:** HTML • CSS • JavaScript • Git • GitHub
+This repository is my personal internship diary, where I share my daily work, projects, experiments, and the lessons I learn throughout my journey as a software trainee developer.
+
+## 🎯 Goals
+✨ Learn consistently
+✨ Build practical projects
+✨ Improve problem-solving
+✨ Master Git & GitHub
+✨ Grow as a Software Developer
+---
+⭐ Every line of code is a step closer to becoming a better developer.
