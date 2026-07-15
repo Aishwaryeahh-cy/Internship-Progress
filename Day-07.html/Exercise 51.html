@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+</head>
+<body>
+    <script>
+        function placeOrder(callback){
+            document.write("Order Placed...<br>");
+            setTimeout(function(){
+                callback();
+            },2000);
+        }
+        function preparefood(callback){
+            document.write("Food is being prepared...<br>");
+            setTimeout(function(){
+                callback();
+            },3000);
+        }
+        function deliverfood(callback){
+            document.write("Food is out for Delivery...<br>");
+            setTimeout(function(){
+                callback();
+            },2000);
+        }
+        function foodDelivered(){
+            document.write("Food Delivered successfully");
+        }
+        placeOrder(function(){
+            preparefood(function(){
+                deliverfood(function(){
+                    foodDelivered();
+                });
+
+            });
+            
+        });
+
+    </script>
+    
+</body>
+</html>

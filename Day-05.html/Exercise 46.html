@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Grade Dashboard</title>
+
+<style>
+    table{
+        border-collapse: collapse;
+        width: 500px;
+    }
+
+    th,td{
+        border:1px solid black;
+        padding:10px;
+        text-align:center;
+    }
+
+    button{
+        margin-top:20px;
+        padding:10px;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Student Grade Dashboard</h2>
+
+<table id="table">
+
+<tr>
+    <th>Name</th>
+    <th>Marks</th>
+    <th>Grade</th>
+</tr>
+
+<tr>
+    <td>Rahul</td>
+    <td>90</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>Anusha</td>
+    <td>75</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>Amit</td>
+    <td>35</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>Neha</td>
+    <td>60</td>
+    <td></td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="checkGrades()">Check Grades</button>
+
+<script>
+
+function checkGrades(){
+
+    let table = document.getElementById("table");
+
+    let rows = table.rows;
+
+    for(let i = 1; i < rows.length; i++){
+
+        let marks = Number(rows[i].cells[1].innerHTML);
+
+        let gradeCell = rows[i].cells[2];
+
+        if(marks > 80){
+
+            rows[i].style.backgroundColor = "lightgreen";
+            gradeCell.innerHTML = "A";
+
+        }
+        else if(marks >= 40){
+
+            gradeCell.innerHTML = "B";
+
+        }
+        else{
+
+            rows[i].style.backgroundColor = "lightcoral";
+            gradeCell.innerHTML = "F";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

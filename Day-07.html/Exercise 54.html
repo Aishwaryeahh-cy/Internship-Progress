@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Order</title>
+</head>
+<body>
+    <script>
+        function placeOrder(){
+            return new Promise(function(resolve,reject){
+            setTimeout(function(){
+                resolve("Order Placed");
+            },2000);
+        });
+        }
+        function payment(){
+            return new Promise(function(resolve,reject){
+                let success = true;
+                setTimeout(function(){
+                    if (success){
+                        resolve("Payment Successfull");
+                    }
+                    else{
+                        reject("Payment Failed");
+                    }
+                },2000);
+            });
+        }
+        function shipProduct(){
+            return new Promise(function(resolve,reject){
+                setTimeout(function(){
+                    resolve("Product Shipped");
+                },2000);
+            });
+        }
+        placeOrder()
+        .then(function(result){
+            document.write(result + "br");
+            return payment();
+        })
+        .then(function(result){
+            document.write(result + "<br>");
+            return shipProduct();
+        })
+        .then(function(result){
+            document.write(result + "<br>");
+            document.write("Order Completed");
+        })
+        .catch(function(error){
+            document.write(error);
+        });
+    </script>
+    
+</body>
+</html>
