@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Transformation Challenge</title>
+</head>
+<body>
+
+<script>
+
+const numbers = [10, 20, 30, 40, 50];
+
+let doubled = numbers.map(num => num * 2);
+
+document.write("<h2>Doubled Numbers</h2>");
+document.write(doubled + "<br><br>");
+
+numbers.shift();
+
+document.write("<h2>After Shift</h2>");
+document.write(numbers + "<br><br>");
+
+numbers.unshift(5, 15);
+
+document.write("<h2>After Unshift</h2>");
+document.write(numbers + "<br><br>");
+
+numbers.splice(3, 2, 100, 200);
+
+document.write("<h2>After Splice</h2>");
+document.write(numbers);
+
+</script>
+
+</body>
+</html>

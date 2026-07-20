@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object Manipulation</title>
+</head>
+<body>
+
+<script>
+
+const company = {
+    name: "ABC Ltd",
+    address: {
+        city: "Mumbai",
+        state: "Maharashtra"
+    },
+    departments: {
+        IT: 50,
+        HR: 10,
+        Finance: 15
+    }
+};
+
+document.write("<h2>Company Details</h2>");
+document.write("Company Name: " + company.name + "<br>");
+
+document.write("City: " + company.address.city + "<br>");
+document.write("State: " + company.address.state + "<br>");
+
+document.write("<h3>Departments</h3>");
+document.write("IT: " + company.departments.IT + "<br>");
+document.write("HR: " + company.departments.HR + "<br>");
+document.write("Finance: " + company.departments.Finance + "<br>");
+
+company.address.city = "Bangalore";
+
+company.departments.IT += 10;
+
+document.write("<h3>Updated Details</h3>");
+document.write("Updated City: " + company.address.city + "<br>");
+document.write("Updated IT Employees: " + company.departments.IT + "<br>");
+
+</script>
+
+</body>
+</html>

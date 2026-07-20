@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Clock</title>
+
+<style>
+
+body{
+    text-align:center;
+    margin-top:100px;
+    font-family:Arial;
+}
+
+#clock{
+    font-size:40px;
+    font-weight:bold;
+}
+
+#greeting{
+    font-size:30px;
+}
+
+</style>
+
+</head>
+<body id="body">
+
+<h1 id="greeting"></h1>
+
+<h2 id="clock"></h2>
+
+<script>
+
+function showTime(){
+
+    let now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    let time = hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("clock").innerHTML = time;
+
+    if(hours < 12){
+
+        document.getElementById("greeting").innerHTML = "Good Morning";
+        document.getElementById("body").style.backgroundColor = "lightyellow";
+
+    }
+    else if(hours < 18){
+
+        document.getElementById("greeting").innerHTML = "Good Afternoon";
+        document.getElementById("body").style.backgroundColor = "lightblue";
+
+    }
+    else{
+
+        document.getElementById("greeting").innerHTML = "Good Evening";
+        document.getElementById("body").style.backgroundColor = "darkgray";
+        document.getElementById("greeting").style.color = "white";
+        document.getElementById("clock").style.color = "white";
+
+    }
+
+}
+
+showTime();
+
+setInterval(showTime,1000);
+
+</script>
+
+</body>
+</html>

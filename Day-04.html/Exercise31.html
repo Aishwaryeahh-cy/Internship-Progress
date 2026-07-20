@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Inventory Management</title>
+</head>
+<body>
+
+<script>
+
+const products = [
+    { id: 1, name: "Laptop", stock: 10, price: 50000 },
+    { id: 2, name: "Mouse", stock: 50, price: 500 },
+    { id: 3, name: "Keyboard", stock: 30, price: 1500 }
+];
+
+products.push({ id: 4, name: "Monitor", stock: 20, price: 12000 });
+
+document.write("<h3>After Push</h3>");
+
+for(let i=0; i<products.length; i++){
+    document.write(products[i].name + "<br>");
+}
+
+products.pop();
+
+document.write("<h3>After Pop</h3>");
+
+for(let i=0; i<products.length; i++){
+    document.write(products[i].name + "<br>");
+}
+
+for(let i=0; i<products.length; i++){
+
+    if(products[i].name == "Laptop"){
+        products[i].stock = products[i].stock + 5;
+    }
+
+}
+
+document.write("<h3>Updated Stock</h3>");
+
+for(let i=0; i<products.length; i++){
+
+    document.write(products[i].name + " : " + products[i].stock + "<br>");
+
+}
+
+document.write("<h3>Stock Less Than 20</h3>");
+
+for(let i=0; i<products.length; i++){
+
+    if(products[i].stock < 20){
+        document.write(products[i].name + "<br>");
+    }
+
+}
+
+</script>
+
+</body>
+</html>

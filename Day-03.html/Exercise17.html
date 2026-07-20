@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Secret Number</title>
+</head>
+<body>
+    <script>
+        const guesses = [2, 5, 9, 12, 18];
+        const secret = 12;
+        for(i=0; i<guesses.length; i++){
+        if(guesses[i] == secret){
+        console.log("Correct!");
+        break;
+    }
+    else{
+        console.log("Wrong guess");
+    }
+}
+</script>
+</body>
+</html>

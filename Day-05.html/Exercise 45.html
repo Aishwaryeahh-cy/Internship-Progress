@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quote Generator</title>
+
+    <style>
+        body{
+            text-align:center;
+            margin-top:100px;
+        }
+
+        p{
+            font-size:20px;
+        }
+
+        button{
+            padding:10px 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Quote Generator</h1>
+
+<p id="quote">Click the button to generate a quote.</p>
+
+<button onclick="generateQuote()">Generate Quote</button>
+
+<script>
+
+let quotes = [
+    "Believe in yourself.",
+    "Never give up.",
+    "Success comes from hard work.",
+    "Dream big and work hard.",
+    "Every day is a new beginning."
+];
+
+function generateQuote(){
+
+    let random = Math.floor(Math.random() * quotes.length);
+
+    let para = document.getElementById("quote");
+
+    para.innerHTML = quotes[random];
+
+    let size = Math.floor(Math.random() * 20) + 20;
+    para.style.fontSize = size + "px";
+
+    let colors = ["red","blue","green","purple","orange"];
+
+    let randomColor = Math.floor(Math.random() * colors.length);
+
+    para.style.color = colors[randomColor];
+
+}
+
+</script>
+
+</body>
+</html>

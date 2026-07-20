@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrow Function Calculator</title>
+</head>
+<body>
+
+<script>
+
+const calculate = (a, b, op) => {
+
+    if (op == "+") {
+        return a + b;
+    }
+    else if (op == "-") {
+        return a - b;
+    }
+    else if (op == "*") {
+        return a * b;
+    }
+    else if (op == "/") {
+        return a / b;
+    }
+    else {
+        return "Invalid Operator";
+    }
+
+};
+
+console.log(calculate(8, 4, "/"));
+
+</script>
+
+</body>
+</html>
+
+
+<!-- 9th Answer
+x = 20 is a local variable, so it is printed inside the demo() function.
+x = 50 is the global variable, so it is printed outside the function. -->
