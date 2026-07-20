@@ -6,9 +6,13 @@ This repository is my personal internship diary, where I share my daily work, pr
 
 ## 🎯 Goals
 ✨ Learn consistently
+
 ✨ Build practical projects
+
 ✨ Improve problem-solving
+
 ✨ Master Git & GitHub
+
 ✨ Grow as a Software Developer
 ---
 ⭐ Every line of code is a step closer to becoming a better developer.
