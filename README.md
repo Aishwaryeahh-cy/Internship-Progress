@@ -15,4 +15,4 @@ This repository is my personal internship diary, where I share my daily work, pr
 
 ✨ Grow as a Software Developer
 ---
-⭐ Every line of code is a step closer to becoming a better developer.
+⭐ Every line of code is a step closer to becoming a better developer...
