@@ -1,0 +1,19 @@
+Git and GitHub Topics Learned
+
+- Git: A distributed version control system used to track changes in source code.
+- GitHub: A cloud platform used to host and manage Git repositories.
+- Repository: A storage location for a project's files and version history.
+- Local Repository: Repository stored on a local computer.
+- Remote Repository: Repository hosted on a server such as GitHub.
+- git clone: Creates a local copy of a remote repository.
+- git init: Initializes a new Git repository.
+- git add: Stages files for the next commit.
+- git commit: Saves staged changes with a message.
+- git push: Uploads local commits to the remote repository.
+- git pull: Downloads and merges changes from the remote repository.
+- Branch: An independent line of development.
+- git merge: Combines changes from one branch into another.
+- git rebase: Reapplies commits on top of another branch to maintain a linear history.
+- git cherry-pick: Applies a specific commit from one branch to another.
+- Merge Conflict: Occurs when Git cannot automatically merge changes.
+- git log: Displays the commit history of a repository.
