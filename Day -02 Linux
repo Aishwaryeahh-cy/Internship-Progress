@@ -1,0 +1,140 @@
+# Linux Assignment
+
+## Overview
+
+This repository contains solutions for a Linux Administration assignment consisting of 10 practical exercises. The assignment covers fundamental Linux commands, directory and file management, user and group administration, file permissions, backup and compression, password management, disk usage analysis, and system auditing.
+
+---
+
+## Objectives
+
+- Learn Linux directory and file management.
+- Practice file operations such as creating, copying, moving, and renaming files.
+- Perform backup and compression using tar.
+- Manage log files efficiently.
+- Create and manage Linux users and groups.
+- Configure file ownership and permissions.
+- Manage user passwords and account settings.
+- Analyze disk usage and identify large files.
+- Audit Linux user accounts and home directories.
+
+---
+
+## Exercises Completed
+
+### Exercise 1 – Create a Project Directory Structure
+- Created a project directory.
+- Created multiple subdirectories using a single command.
+- Verified the directory structure.
+- Displayed the absolute project path.
+
+### Exercise 2 – File Management for Developers
+- Created project files.
+- Copied README.md to the docs directory.
+- Moved configuration files to the backup directory.
+- Renamed Java source files.
+- Verified file permissions.
+
+### Exercise 3 – Backup Important Files
+- Created a backup directory.
+- Copied project files while preserving permissions and timestamps.
+- Compressed the backup into a `.tar.gz` archive.
+- Verified archive contents.
+
+### Exercise 4 – Log File Cleanup
+- Created multiple log files.
+- Added sample log entries.
+- Searched log files using the `find` command.
+- Deleted unnecessary log files.
+- Counted remaining log files.
+
+### Exercise 5 – Linux User Management
+- Created multiple Linux users.
+- Assigned passwords.
+- Verified user creation.
+- Displayed user IDs.
+- Verified home directories.
+
+### Exercise 6 – Linux Group Management
+- Created developer and tester groups.
+- Added users to their respective groups.
+- Verified group memberships.
+- Displayed group information.
+
+### Exercise 7 – File Ownership and Permissions
+- Created a secure project directory.
+- Changed ownership to `root:developers`.
+- Applied secure file permissions.
+- Verified ownership and permissions.
+
+### Exercise 8 – Password and Account Management
+- Locked and unlocked user accounts.
+- Forced password change at next login.
+- Checked password expiry information.
+
+### Exercise 9 – Disk Usage Management
+- Created test files of different sizes.
+- Identified files larger than 20 MB.
+- Displayed file sizes.
+- Removed the largest file.
+
+### Exercise 10 – User Home Directory Audit
+- Listed users and their home directories.
+- Displayed directory sizes.
+- Identified empty home directories.
+- Generated a user audit report containing:
+  - Username
+  - UID
+  - Home Directory
+  - Login Shell
+
+---
+
+## Linux Commands Practiced
+
+- pwd
+- ls
+- mkdir
+- touch
+- cp
+- mv
+- rm
+- tree
+- find
+- tar
+- chmod
+- chown
+- useradd
+- passwd
+- usermod
+- groupadd
+- groups
+- getent
+- chage
+- du
+- awk
+- cut
+- wc
+- echo
+- fallocate
+- id
+
+---
+
+## Skills Gained
+
+- Linux Command Line
+- Directory Management
+- File Management
+- Backup & Compression
+- User Administration
+- Group Administration
+- File Permissions
+- Ownership Management
+- Password Policies
+- Disk Space Management
+- System Administration
+- Linux Security Basics
+- User Account Auditing
+
+---
